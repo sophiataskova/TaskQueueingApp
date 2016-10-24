@@ -28,6 +28,13 @@ public class Tasks {
         );
     }
 
+    static {
+        // Add some sample items.
+        for (int i = 1; i <= 3; i++) {
+            addItem(createTask(i, "sample task", "sample description", new LatLng(37.615, -122.389)));
+        }
+    }
+
     public static class Task {
 
         private final String id;
