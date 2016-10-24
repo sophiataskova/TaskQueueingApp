@@ -1,6 +1,8 @@
 package com.example.sophiataskova.taskqueueingapp.models;
 
 
+//import com.google.android.gms.maps.model.LatLng;
+
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
@@ -20,8 +22,10 @@ public class Tasks {
         ITEM_MAP.put(item.id, item);
     }
 
-    private static Task createTask(int position, String name, String text, LatLng coordinates) {
-        return new Task(String.valueOf(position), name, text, coordinates);
+    private static Task createTask(int position, String name, String text, LatLng coordinates
+    ) {
+        return new Task(String.valueOf(position), name, text, coordinates
+        );
     }
 
     public static class Task {
@@ -31,7 +35,8 @@ public class Tasks {
         private String text;
         private LatLng coordinates;
 
-        public Task(String id, String name, String text, LatLng coordinates) {
+        public Task(String id, String name, String text, LatLng coordinates
+        ) {
             this.id = id;
             this.name = name;
             this.text = text;

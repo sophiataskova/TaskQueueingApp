@@ -15,10 +15,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.sophiataskova.taskqueueingapp.models.Tasks;
+//import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.DatabaseReference;
 
 import java.util.List;
 

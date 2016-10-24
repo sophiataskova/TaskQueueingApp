@@ -10,6 +10,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.sophiataskova.taskqueueingapp.models.Tasks;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
  * A fragment representing a single Task detail screen.
@@ -29,6 +34,8 @@ public class TaskDetailFragment extends Fragment {
      */
     private Tasks.Task mItem;
 
+
+
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
@@ -45,6 +52,8 @@ public class TaskDetailFragment extends Fragment {
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
             mItem = Tasks.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+
+
 
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
@@ -66,4 +75,6 @@ public class TaskDetailFragment extends Fragment {
 
         return rootView;
     }
+
+
 }
